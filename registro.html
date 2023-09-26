@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Biblioteca Universitaria</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="usuarios.html">Tabla de Usuarios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+<main>
+    <h1>Registro</h1>
+    <form id="registro-form">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+        </div>
+        <div>
+            <label for="cedula">Cédula:</label>
+            <input type="text" id="cedula" name="cedula" pattern="[0-9]+" required>
+        </div>        
+        <div>
+            <label for="usuarie">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required>
+        </div>
+        <div>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+        </div>
+        <button type="submit">Registrarse</button>
+    </form>
+</main>
+
+    <footer>
+        <p>Derechos de autor &copy; 2023 Biblioteca Universitaria</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
+
